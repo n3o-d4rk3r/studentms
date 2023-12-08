@@ -26,6 +26,8 @@
                 <div class="col-xl-5 col-lg-5 col-md-6">
                     <div class="d-flex flex-column justify-content-between h-100 right-area">
                         <a class="btn btn-sm w-25 bg-gradient-primary text-white ml-auto"  href="{{ route('register') }}">{{__('Sign up')}}</a>
+                        <form method="POST" action="{{ route('login') }}">
+                        @csrf
                         <div>
                             <div class="login-three-inputs mt-5">
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -64,6 +66,7 @@
                                 @endif
                             </div>
                         </div>
+                        </form>
                         <div class="login-three-social social-logins mt-4">
                             <div class="social-btn bg-gradient-primary">
                                 <a href="#" class="fb-btn">
@@ -99,3 +102,4 @@
 @push('custom-scripts')
 
 @endpush
+
