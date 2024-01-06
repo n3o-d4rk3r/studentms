@@ -1,7 +1,6 @@
 # Project Description
 Student Management System (SMS) PHP project efficiently organizes student data, tracks academic progress, and manages administrative tasks, providing a user-friendly interface for seamless school management.
 
-
 # Laravel Project Installation Guide
 
 This document provides step-by-step instructions to set up and install a Laravel project.
